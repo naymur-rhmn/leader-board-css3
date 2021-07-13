@@ -122,7 +122,8 @@ hr{
 }
 
 
-/* responsive styles */
+/*-------------------------------------
+-------- responsive styles ----------*/
 
 /* mobaile devices */
 @media screen and (max-width: 767px) {
@@ -158,5 +159,30 @@ hr{
     .course{
         max-width: 300px;
         margin-bottom: 25px;
+    }
+}
+
+    /* tablet devices */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player{
+        justify-content: center;
+    }
+    .blogs {
+        grid-column-gap: 10px;
+    }
+    .blog-info h3 {
+        font-size: 18px;
+    }
+    .course-duration {
+        font-size: 12px;
     }
 }
